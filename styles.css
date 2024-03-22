@@ -1,0 +1,77 @@
+/* Allgemeine Stile */
+body {
+    background: linear-gradient(to bottom right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8a2be2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Anordnung von Elementen in einer Spalte */
+    justify-content: space-between; /* Platzieren Sie den Footer am unteren Rand */
+    align-items: center;
+    margin: 0; /* Setzen Sie den Seitenrand auf 0, um unnötige Abstände zu vermeiden */
+}
+
+.container {
+    text-align: center;
+    margin-top: 40px; /* Erhöhen Sie den oberen Abstand für den Container */
+}
+
+/* Spielbrett-Stile */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hinzugefügter Übergangseffekt */
+}
+
+.cell:hover {
+    background-color: lightcyan; /* Geänderte Hintergrundfarbe beim Überfahren */
+}
+
+/* Reset-Button-Stile */
+#reset {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px; /* Erhöhen Sie den oberen Abstand für den Reset-Button */
+}
+
+/* Chat-Container-Stile */
+#chat {
+    margin-top: 20px; /* Erhöhen Sie den oberen Abstand für den Chat-Container */
+}
+
+#chat-messages {
+    height: 10px; /* Erhöhen Sie die Höhe des Chat-Nachrichtencontainers */
+    overflow-y: auto; /* Fügen Sie eine vertikale Scrollleiste hinzu, wenn die Nachrichten den Container überlaufen */
+}
+
+#chat-input {
+    width: 70%; /* Setzen Sie die Breite des Eingabefelds */
+    padding: 10px; /* Fügen Sie Innenabstand hinzu */
+    margin-top: 10px; /* Fügen Sie einen oberen Abstand hinzu */
+}
+
+#send-message {
+    width: 20%; /* Setzen Sie die Breite des Senden-Buttons */
+    padding: 10px; /* Fügen Sie Innenabstand hinzu */
+    margin-top: 10px; /* Fügen Sie einen oberen Abstand hinzu */
+    cursor: pointer; /* Ändern Sie den Cursor in den Zeiger, um anzuzeigen, dass es klickbar ist */
+}
+
+/* Footer-Stile */
+footer {
+    margin-bottom: 10px; /* Unteren Abstand für den Footer hinzufügen */
+    align-self: flex-start; /* Platzieren Sie den Footer am linken Rand */
+}
